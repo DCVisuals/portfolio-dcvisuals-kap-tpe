@@ -3,122 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DCVisuals – Réalisations</title>
-  <meta name="description" content="Découvrez les réalisations photo, vidéo, visites virtuelles et sites web de DCVisuals à La Réunion.">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Présentation des réalisations – DCVisuals</title>
+  <meta name="description" content="Découvrez nos créations : vidéos immersives, visites virtuelles, photographies professionnelles et sites web performants.">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #001f3f, #2e3b4e);
+      background-color: #001f3f;
       color: #fff;
+      padding: 2rem;
     }
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-    h2 {
+    h1 {
       color: #FFD700;
-      font-size: 2rem;
       text-align: center;
       margin-bottom: 2rem;
     }
-    .swiper {
-      width: 100%;
-      padding-bottom: 40px;
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: auto;
     }
-    .swiper-slide {
-      background-color: #2f2f2f;
+    .card {
+      background-color: #002b5c;
       border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(255,255,255,0.1);
-    }
-    .swiper-slide img, .swiper-slide iframe {
-      width: 100%;
-      display: block;
-      aspect-ratio: 16 / 9;
-      border: none;
-    }
-    .swiper-slide a {
-      display: block;
       padding: 1rem;
+      box-shadow: 0 2px 10px rgba(255,255,255,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card h2 {
       color: #FFD700;
-      text-decoration: none;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    .card iframe, .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .card a {
+      background-color: #FFD700;
+      color: #000;
+      padding: 0.5rem 1rem;
       text-align: center;
+      border-radius: 6px;
       font-weight: bold;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .grid-section {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-  <section>
-    <h2>📸 Réalisations photo</h2>
-    <div class="swiper photo-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="https://placehold.co/800x450?text=Photo+1" alt="Photo 1"></div>
-        <div class="swiper-slide"><img src="https://placehold.co/800x450?text=Photo+2" alt="Photo 2"></div>
-        <div class="swiper-slide"><img src="https://placehold.co/800x450?text=Photo+3" alt="Photo 3"></div>
-      </div>
+  <h1>🌟 Découvrez nos réalisations DCVisuals</h1>
+  <div class="grid-section">
+    <div class="card">
+      <h2>🎥 Vidéo promotionnelle</h2>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      <a href="https://www.youtube.com/@dcvisuals">Voir d'autres vidéos</a>
     </div>
-  </section>
-
-  <section>
-    <h2>🎬 Vidéos</h2>
-    <div class="swiper video-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/Y5lpI7jfXoU" allowfullscreen></iframe></div>
-        <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/5V-NOV25x1A" allowfullscreen></iframe></div>
-      </div>
+    <div class="card">
+      <h2>📸 Photographie professionnelle</h2>
+      <img src="https://placehold.co/400x250?text=Photo+HDR" alt="Photographie HDR">
+      <a href="https://dcvisuals.fr/portfolio">Voir notre galerie</a>
     </div>
-  </section>
-
-  <section>
-    <h2>🌀 Visites virtuelles</h2>
-    <div class="swiper virtual-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><iframe src="https://my.matterport.com/show/?m=example1" allowfullscreen></iframe></div>
-        <div class="swiper-slide"><iframe src="https://my.matterport.com/show/?m=example2" allowfullscreen></iframe></div>
-      </div>
+    <div class="card">
+      <h2>🏠 Visite virtuelle</h2>
+      <iframe src="https://my.matterport.com/show/?m=YOUR_TOUR_ID" frameborder="0" allowfullscreen></iframe>
+      <a href="https://dcvisuals.fr/visites-virtuelles">Explorer nos visites</a>
     </div>
-  </section>
-
-  <section>
-    <h2>🌍 Sites réalisés</h2>
-    <div class="swiper site-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="https://lappartdanslesnuages.re" target="_blank">L'Appart dans les nuages</a>
-        </div>
-        <div class="swiper-slide">
-          <a href="https://villagrandanse.re" target="_blank">Villa Spa Grand Anse</a>
-        </div>
-      </div>
+    <div class="card">
+      <h2>🌐 Site web réalisé</h2>
+      <img src="https://placehold.co/400x250?text=Site+web" alt="Site web créé">
+      <a href="https://exemple-site.dcvisuals.fr" target="_blank">Visiter le site</a>
     </div>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const config = {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 2
-        },
-        1024: {
-          slidesPerView: 3
-        }
-      }
-    };
-    new Swiper('.photo-swiper', config);
-    new Swiper('.video-swiper', config);
-    new Swiper('.virtual-swiper', config);
-    new Swiper('.site-swiper', config);
-  </script>
+  </div>
 </body>
 </html>
